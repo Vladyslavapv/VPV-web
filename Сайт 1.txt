@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Владислава Поліно-Василенко - Особиста Сторінка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #ff99cc;
+            color: #fff;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        .section {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #ff66a3;
+        }
+        .contacts a {
+            color: #ff66a3;
+            text-decoration: none;
+        }
+        .contacts a:hover {
+            text-decoration: underline;
+        }
+        .language-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .language-buttons button {
+            margin: 0 5px;
+            padding: 8px 16px;
+            border: none;
+            background-color: #ff99cc;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .language-buttons button:hover {
+            background-color: #ff66a3;
+        }
+    </style>
+    <script>
+        function setLanguage(language) {
+            const textUA = document.getElementById("text-ua");
+            const textEN = document.getElementById("text-en");
+
+            if (language === "ua") {
+                textUA.style.display = "block";
+                textEN.style.display = "none";
+            } else if (language === "en") {
+                textUA.style.display = "none";
+                textEN.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body onload="setLanguage('ua')">
+    <div class="container">
+        <header>
+            <h1>Владислава Поліно-Василенко (VPV)</h1>
+        </header>
+
+        <div class="language-buttons">
+            <button onclick="setLanguage('ua')">Українська</button>
+            <button onclick="setLanguage('en')">English</button>
+        </div>
+
+        <div id="text-ua" class="section">
+            <h2>Про мене</h2>
+            <p><strong>Владислава Поліно-Василенко (VPV)</strong> — українська фото-модель, громадська діячка та телеведуча, народилася 25 травня в селі Нові Петрівці, Україна. Відомою стала завдяки своїй діяльності в модельній індустрії та участі в конкурсах краси, зокрема як ведуча міжнародних подій, таких як Miss and Mister World. Володіє численними титулами, серед яких Міні Міс Україна 2018 та Honorary member WLBF.</p>
+            <p><strong>Громадська діяльність</strong>: Владислава активно займається соціальними проєктами, серед яких «Stop bullying» та «Планета Сонячних зайчиків», спрямовані на підтримку соціально важливих тем.</p>
+            <p><strong>Кар'єра на телебаченні</strong>: Раніше Владислава працювала журналісткою на телеканалі РАІ, де вела телепрограму для молоді під назвою «Подружки».</p>
+            <p><strong>Освіта</strong>: На даний момент навчається в Італії в артистичному ліцеї. У майбутньому планує продовжити навчання в США, мріючи досягти успіху в Голлівуді.</p>
+        </div>
+
+        <div id="text-en" class="section" style="display: none;">
+            <h2>About Me</h2>
+            <p><strong>Vladyslava Polino-Vasylenko (VPV)</strong> is a Ukrainian photo model, public figure, and TV presenter, born on May 25 in Novi Petrivtsi, Ukraine. She became well-known through her work in the modeling industry and participation in beauty pageants, notably as a host of international events such as Miss and Mister World. She holds numerous titles, including Mini Miss Ukraine 2018 and Honorary member of the WLBF.</p>
+            <p><strong>Public Activities</strong>: Vladyslava is actively engaged in social projects, including "Stop bullying" and "Planet of Sun Bunnies," which focus on addressing important social issues.</p>
+            <p><strong>Television Career</strong>: Previously, Vladyslava worked as a journalist at the RAI TV channel, where she hosted a youth program called "Girlfriends."</p>
+            <p><strong>Education</strong>: She is currently studying at an art lyceum in Italy. In the future, she plans to continue her studies in the United States, aspiring to succeed in Hollywood.</p>
+        </div>
+
+        <div class="section contacts">
+            <h2>Контакти</h2>
+            <p>Email: <a href="mailto:vladyslava1pv@gmail.com">vladyslava1pv@gmail.com</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/vladyslavapv/profilecard/?igsh=MXRyejFtNG4ybGU5Nw==" target="_blank">@vladyslavapv</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/share/Uf5B3hVucEK6oVEu/?mibextid=LQQJ4d" target="_blank">facebook.com/vladyslavapv</a></p>
+            <p>YouTube: <a href="https://youtube.com/@vladyslavapv?si=U1e5WqqBbBPHqvpK" target="_blank">youtube.com/@vladyslavapv</a></p>
+        </div>
+    </div>
+</body>
+</html>
